@@ -1,0 +1,1715 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'caviar_dreamsregular';
+  src: url("../font/CaviarDreams-webfont.eot");
+  src: url("../font/CaviarDreams-webfont.eot?#iefix") format("embedded-opentype"), url("../font/CaviarDreams-webfont.woff2") format("woff2"), url("../font/CaviarDreams-webfont.woff") format("woff"), url("../font/CaviarDreams-webfont.ttf") format("truetype"), url("../../font//CaviarDreams-webfont.svg#caviar_dreamsregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'caviar_dreamsbold';
+  src: url("../font/Caviar_Dreams_Bold-webfont.eot");
+  src: url("../font/Caviar_Dreams_Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/Caviar_Dreams_Bold-webfont.woff2") format("woff2"), url("../font/Caviar_Dreams_Bold-webfont.woff") format("woff"), url("../font/Caviar_Dreams_Bold-webfont.ttf") format("truetype"), url("../font/Caviar_Dreams_Bold-webfont.svg#caviar_dreamsbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'caviar_dreamsitalic';
+  src: url("../font/CaviarDreams_Italic-webfont.eot");
+  src: url("../font/CaviarDreams_Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../font/CaviarDreams_Italic-webfont.woff2") format("woff2"), url("../font/CaviarDreams_Italic-webfont.woff") format("woff"), url("../font/CaviarDreams_Italic-webfont.ttf") format("truetype"), url("../font/CaviarDreams_Italic-webfont.svg#caviar_dreamsitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url("../font/Roboto-Regular-webfont.eot");
+  src: url("../../font//Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/Roboto-Regular-webfont.woff2") format("woff2"), url("../font/Roboto-Regular-webfont.woff") format("woff"), url("../font/Roboto-Regular-webfont.ttf") format("truetype"), url("../font/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3em;
+  color: #c2163c;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.8em;
+}
+
+p {
+  font-size: 1em;
+}
+
+body {
+  font-family: 'caviar_dreamsregular', 'robotoregular';
+  color: #440b11;
+  margin: 0;
+  background-color: #FFFFFF;
+}
+
+@media all and (max-width: 1024px) {
+  body {
+    width: auto;
+  }
+}
+
+.btn {
+  z-index: 1;
+  position: relative;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'caviar_dreamsregular';
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  background-color: #c2163c;
+  padding: 0.75rem 1rem;
+  border-radius: 10rem;
+  border: none;
+  margin: 40px auto 40px auto;
+  width: auto;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  cursor: pointer;
+}
+
+.btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle, #e62550 0%, #94112e 100%);
+  opacity: 0;
+  border-radius: 10rem;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.btn:hover::after {
+  opacity: 1;
+}
+
+.btn__nos-produits {
+  margin: 60px auto 60px auto;
+}
+
+@media all and (max-width: 1024px) {
+  .btn__nos-produits {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .btn__commande {
+    width: 270px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .btn__colis-boeuf {
+    min-width: 250px;
+  }
+}
+
+.btn__small-screen {
+  display: none;
+}
+
+@media all and (max-width: 1024px) {
+  .btn__small-screen {
+    display: block;
+  }
+}
+
+th {
+  border-bottom: 1px solid #232222;
+  text-align: left;
+  color: #c2163c;
+  font-size: 1.3em;
+}
+
+table {
+  font-size: 1.15em;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.colonne_prix, .colonne_quantité {
+  padding: 5px 0 5px 15px;
+}
+
+@media all and (max-width: 767px) {
+  .header {
+    margin: 0;
+  }
+}
+
+.nav__bar__logo--visuel {
+  height: 60px;
+  background-color: transparent;
+}
+
+.nav__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65px;
+}
+
+@media all and (min-width: 768px) {
+  .nav__burger {
+    display: none;
+  }
+  .nav__bar__links {
+    padding: 5px 5px 5px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .nav__bar__link {
+    list-style-type: none;
+    text-align: left;
+    margin-right: 10px;
+    overflow: hidden;
+  }
+  .nav__bar__link:hover > a::after {
+    width: 100%;
+  }
+  .nav__bar__link > a {
+    font-size: 1.2rem;
+    color: #440b11;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .nav__bar__link > a::after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background-color: #c2163c;
+    -webkit-transition: width 0.4s;
+    transition: width 0.4s;
+  }
+  .nav__bar__link > a:hover {
+    color: #c2163c;
+  }
+  .nav__bar__sub-menu {
+    /* on cache les sous menus complètement sur la gauche */
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    opacity: 0.8;
+    border-radius: 8%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .nav__bar__sub-menu {
+    opacity: 0.95;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .nav__bar__sub-menu__links {
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+  }
+  .nav__bar__sub-menu__link {
+    padding: 2px 0;
+    text-align: left;
+    font-weight: bold;
+    list-style-type: none;
+  }
+  .nav__bar__sub-menu__link > a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #440b11;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .nav__bar__sub-menu__link > a {
+    font-size: 1em;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .nav__bar__link:hover .nav__bar__sub-menu {
+    /* Au survol des lien du menu on replace les sous menus */
+    display: block;
+    background-color: #FFFFFF;
+    border-bottom: 2px solid transparent;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .nav__bar {
+    background-color: #c2163c;
+    padding: 0;
+    margin: 0 0 20px 0;
+    padding: 0 10px 0 0;
+  }
+  .nav__bar__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+    color: transparent;
+    height: 100vh;
+    position: absolute;
+    top: 65px;
+    right: -100px;
+    background-color: #c2163c;
+    margin-top: 0;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+  }
+  .nav__bar__link {
+    -webkit-transform: translateX(101%);
+            transform: translateX(101%);
+  }
+  .nav__bar__link > a {
+    color: white;
+    display: block;
+    padding: 1rem;
+    font-size: 1.1rem;
+    -webkit-transition: padding-left 0.4s ease-in-out, letter-spacing 0.4s ease-in-out;
+    transition: padding-left 0.4s ease-in-out, letter-spacing 0.4s ease-in-out;
+    text-decoration: none;
+  }
+  .show-nav .nav__bar__link {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .nav__bar__sub-menu__links {
+    /* Au survol des lien du menu on replace les sous menus */
+    display: none;
+  }
+  .show-nav .nav__bar__links {
+    width: 100%;
+    visibility: visible;
+    right: 0;
+  }
+  .nav__bar__link > a:hover {
+    padding-left: 2rem;
+    letter-spacing: 2.5px;
+  }
+  .nav__burger {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .nav__burger__bar {
+    display: inherit;
+    width: 45px;
+    height: 4px;
+    background: white;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .show-nav .nav__burger__bar {
+    width: 0;
+    color: transparent;
+  }
+  .nav__burger__bar::before, .nav__burger__bar::after {
+    content: "";
+    width: 45px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: white;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav__burger__bar::before {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+  }
+  .show-nav .nav__burger__bar::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .nav__burger__bar::after {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+  }
+  .show-nav .nav__burger__bar::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .show-nav .nav__bar__sub-menu {
+    display: none;
+  }
+  .show-nav .nav__bar {
+    height: 100vh;
+  }
+  .big-header .header {
+    height: 100vh;
+  }
+  .show-nav .first {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .show-nav .second {
+    -webkit-transition: all 1.1s ease-in-out;
+    transition: all 1.1s ease-in-out;
+  }
+  .show-nav .third {
+    -webkit-transition: all 1.2s ease-in-out;
+    transition: all 1.2s ease-in-out;
+  }
+  .show-nav .fourth {
+    -webkit-transition: all 1.3s ease-in-out;
+    transition: all 1.3s ease-in-out;
+  }
+  .show-nav .fifth {
+    -webkit-transition: all 1.4s ease-in-out;
+    transition: all 1.4s ease-in-out;
+  }
+  .show-nav .sixth {
+    -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+  }
+}
+
+footer {
+  background-color: #232222;
+  color: #FFFFFF;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-top: 2.5px solid #c2163c;
+  margin-top: 50px;
+  width: 100%;
+}
+
+@media all and (max-width: 1024px) {
+  footer {
+    margin-top: 40px;
+  }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  width: 100%;
+  font-size: 0.8em;
+  padding: 20px 0 20px;
+}
+
+@media all and (max-width: 1024px) {
+  .footer {
+    font-size: 0.9em;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    padding: inherit;
+    margin-left: inherit;
+    margin-bottom: 20px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer__bloc-horaires {
+    margin-left: 5px;
+  }
+  .footer__bloc-contact {
+    margin-left: 5px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .footer figure {
+    -webkit-margin-start: 5px;
+            margin-inline-start: 5px;
+  }
+}
+
+.footer h4 {
+  color: #c2163c;
+}
+
+@media all and (max-width: 1024px) {
+  .footer h4 {
+    font-size: 1.1em;
+  }
+}
+
+.footer__bloc-contact__tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__bloc-contact__tel__img {
+  height: 20px;
+  width: auto;
+  margin-right: 5px;
+}
+
+.footer__bloc-contact__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__bloc-contact__email a {
+  color: #FFFFFF;
+  text-decoration: inherit;
+}
+
+.footer__bloc-contact__email__img {
+  height: 20px;
+  width: auto;
+  margin-right: 7px;
+}
+
+.footer__bloc-contact__adresse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__bloc-contact__adresse__img {
+  height: 20px;
+  width: auto;
+  margin-right: 2.5px;
+}
+
+.footer__bloc-horaires {
+  margin-bottom: 55px;
+}
+
+@media all and (max-width: 1024px) {
+  .footer__bloc-horaires {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__bloc-horaires__liste {
+  margin-left: 10px;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+
+@media all and (max-width: 1024px) {
+  .footer__bloc-horaires__liste {
+    -webkit-padding-start: 10px;
+            padding-inline-start: 10px;
+  }
+}
+
+.footer__bloc-medias__FB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer__bloc-medias__FB__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25px;
+  width: auto;
+  margin-right: 7.5px;
+}
+
+.banniere {
+  position: relative;
+  background-image: url(../Photos/Ferme_du_Petit_Marais_banniere3.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  height: 800px;
+  width: 100%;
+}
+
+@media all and (max-width: 1024px) {
+  .banniere {
+    background-image: none;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1.5px;
+    
+  }
+}
+
+.banniere__description {
+  position: absolute;
+  bottom: 0;
+  height: 33px;
+  width: 100%;
+  background-color: rgba(242, 243, 244, 0.5);
+  font-style: italic;
+  text-align: center;
+  padding: 7.5px 0 7.5px 0;
+  margin-bottom: 0;
+  
+}
+
+@media all and (max-width: 1024px) {
+  .banniere__description {
+    background-color: transparent;
+    height: 100px;
+    display: block;
+    font-weight: bold;
+    bottom: inherit;
+    color: #c2163c;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    max-width: 600px;
+  }
+}
+
+.first-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-evenly;
+  margin-top: 60px;
+  gap:20px;
+  align-items: center;
+}
+
+@media all and (max-width: 1024px) {
+  .first-part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+  }
+}
+
+.first-part__photo-verger {
+  height: auto;
+  min-width: 600px;
+  max-width: 700px;
+  border-radius: 5px;
+}
+
+@media all and (max-width: 1024px) {
+  .first-part__photo-verger {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.first-part h2 {
+  max-width: 500px;
+  min-width: 400px;
+  text-align: center;
+}
+
+@media all and (max-width: 1024px) {
+  .first-part h2 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+}
+
+.second-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+      -ms-flex-pack: space-between;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+  align-items: center;
+}
+
+@media all and (max-width: 1024px) {
+  .second-part h2 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .second-part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.second-part__photo-magasin {
+  height: auto;
+  width: 700px;
+  border-radius: 5px;
+}
+
+@media all and (max-width: 1024px) {
+  .second-part__photo-magasin {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.presentation__texte {
+  padding: 0 10px;
+  text-align: justify;
+  margin-top: 80px;
+  font-size: 1.2em;
+}
+
+.presentation__texte h1 {
+  font-size: 2rem;
+  margin-bottom: 60px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.presentation__texte p {
+  line-height: 2rem;
+}
+
+.presentation__texte__signature {
+  text-align: right;
+  color: #c2163c;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.team {
+  padding: 10px 10px;
+}
+
+@media all and (max-width: 1024px) {
+  .team .element:nth-child(1) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.team h2 {
+  color: #c2163c;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.team h3 {
+  color: #440b11;
+}
+
+.team__Norbert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+@media all and (max-width: 1024px) {
+  .team__Norbert {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.team__Norbert__contenu p {
+  max-width: 700px;
+  text-align: justify;
+  margin-top: 20px;
+  line-height: 1.5rem;
+}
+
+.team__Norbert__img {
+  height: 400px;
+  width: auto;
+}
+
+.team__Vince {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+@media all and (max-width: 1024px) {
+  .team__Vince {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.team__Vince__contenu p {
+  max-width: 700px;
+  text-align: justify;
+  margin-top: 20px;
+  line-height: 1.5rem;
+}
+
+.team__Vince__img {
+  height: 400px;
+  width: auto;
+}
+
+.team__Dominique {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+@media all and (max-width: 1024px) {
+  .team__Dominique {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.team__Dominique__contenu {
+  max-width: 700px;
+  text-align: justify;
+  margin-top: 20px;
+  line-height: 1.5rem;
+}
+
+.team__Dominique__contenu p {
+  max-width: 700px;
+  text-align: justify;
+  margin-top: 20px;
+  line-height: 1.5rem;
+}
+
+.team__Dominique__img {
+  height: 400px;
+  width: auto;
+}
+
+.team__Servin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+@media all and (max-width: 1024px) {
+  .team__Servin {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.team__Servin__contenu p {
+  max-width: 700px;
+  text-align: justify;
+  margin-top: 20px;
+  line-height: 1.5rem;
+}
+
+.team__Servin__img {
+  height: 400px;
+  width: auto;
+}
+
+.contact {
+  margin-top: 40px;
+  padding: 10px 10px;
+}
+
+.contact h3 {
+  color: #440b11;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.contact__details {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 1.15em;
+}
+
+.contact__details__telephone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.15em;
+  color: #c2163c;
+}
+
+.contact__details__telephone__img {
+  height: 30px;
+  width: auto;
+  margin-right: 13px;
+}
+
+.contact__details__telephone p {
+  font-weight: bold;
+}
+
+.contact__details__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.15em;
+}
+
+.contact__details__email a {
+  color: #c2163c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact__details__email__img {
+  height: 30px;
+  width: auto;
+  margin-right: 15px;
+}
+
+.contact__commander {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.contact__commander a {
+  text-decoration: underline;
+  color: #c2163c;
+  font-weight: bold;
+}
+
+.contact__commander__deadline {
+  font-weight: bold;
+}
+
+.contact__magasin__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+@media all and (max-width: 1024px) {
+  .contact__magasin__info {
+    min-width: 450px;
+  }
+}
+
+.contact__magasin__map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.produits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 200px 60px 200px 60px;
+}
+
+@media all and (max-width: 1024px) {
+  .produits {
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.produits a {
+  text-decoration: none;
+}
+
+.produits h3 {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.produits__charcuterie, .produits__boucherie, .produits__legumes, .produits__epicerie, .produits__boissons, .produits__laitage, .produits__frais {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px 0 10px;
+}
+
+.produits__charcuterie__img, .produits__boucherie__img, .produits__legumes__img, .produits__epicerie__img, .produits__boissons__img, .produits__laitage__img, .produits__frais__img {
+  height: 100px;
+  width: auto;
+  margin: auto;
+}
+
+.boucherie {
+  padding: 10px 10px;
+}
+
+.boucherie h1 {
+  margin-top: 40px;
+}
+
+.boucherie h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.boucherie__boeuf__caissette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.boucherie__boeuf__caissette__contenu li {
+  list-style: circle;
+  padding: 5px 0 5px 0;
+}
+
+.boucherie__boeuf, .boucherie__porc, .boucherie__volaille {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.boucherie__agneaux .colonne_produit, .boucherie__volaille .colonne_produit, .boucherie__porc .colonne_produit {
+  width: 500px;
+}
+
+@media all and (max-width: 1024px) {
+  .boucherie__agneaux .colonne_produit, .boucherie__volaille .colonne_produit, .boucherie__porc .colonne_produit {
+    min-width: 250px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .boucherie__agneaux .colonne_prix, .boucherie__volaille .colonne_prix, .boucherie__porc .colonne_prix {
+    min-width: 130px;
+  }
+}
+
+.legumes {
+  padding: 10px 10px;
+}
+
+.legumes p {
+  text-align: justify;
+}
+
+.legumes li {
+  padding: 5px 0 5px 0;
+  font-size: 1em;
+}
+
+.legumes ul {
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+
+.legumes h3 {
+  color: #c2163c;
+}
+
+.legumes__carotte, .legumes__patate, .legumes__tomate, .legumes__betterave {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: justify;
+  margin-top: 40px;
+}
+
+@media all and (max-width: 1024px) {
+  .legumes__carotte, .legumes__patate, .legumes__tomate, .legumes__betterave {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.legumes__carotte__bloc, .legumes__patate__bloc, .legumes__tomate__bloc, .legumes__betterave__bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 20px;
+}
+
+@media all and (max-width: 1024px) {
+  .legumes__carotte__bloc, .legumes__patate__bloc, .legumes__tomate__bloc, .legumes__betterave__bloc {
+    width: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .legumes__carotte__bloc, .legumes__patate__bloc, .legumes__tomate__bloc, .legumes__betterave__bloc {
+    margin-bottom: 0;
+  }
+}
+
+.legumes__carotte__bloc__content, .legumes__patate__bloc__content, .legumes__tomate__bloc__content, .legumes__betterave__bloc__content {
+  margin-right: 40px;
+  max-width: 800px;
+}
+
+@media all and (max-width: 600px) {
+  .legumes__carotte__bloc__content__texte, .legumes__patate__bloc__content__texte, .legumes__tomate__bloc__content__texte, .legumes__betterave__bloc__content__texte {
+    display: none;
+  }
+}
+
+.legumes__carotte__bloc__texte--small-screen, .legumes__patate__bloc__texte--small-screen, .legumes__tomate__bloc__texte--small-screen, .legumes__betterave__bloc__texte--small-screen {
+  display: none;
+}
+
+@media all and (max-width: 600px) {
+  .legumes__carotte__bloc__texte--small-screen, .legumes__patate__bloc__texte--small-screen, .legumes__tomate__bloc__texte--small-screen, .legumes__betterave__bloc__texte--small-screen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.legumes__tomate__bloc__content {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.legumes__photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.legumes__photos__aubergines, .legumes__photos__poivrons, .legumes__photos__salade, .legumes__photos__concombres {
+  width: 300px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.legumes__variété {
+  color: #c2163c;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.legumes__astuces-cuisine {
+  list-style: none;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.photo__legumes__carotte, .photo__legumes__patate, .photo__legumes__tomate, .photo__legumes__betterave {
+  width: 450px;
+  height: auto;
+}
+
+@media all and (max-width: 1024px) {
+  .photo__legumes__carotte, .photo__legumes__patate, .photo__legumes__tomate, .photo__legumes__betterave {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.charcuterie-traiteur {
+  padding: 10px 10px;
+}
+
+.charcuterie {
+  margin: 40px 0 60px 0;
+  padding: 10px 10px;
+}
+
+.charcuterie__small-info {
+  font-size: 0.9em;
+  display: inline-block;
+}
+
+.charcuterie .colonne_produit {
+  width: 600px;
+}
+
+@media all and (max-width: 1024px) {
+  .charcuterie .colonne_produit {
+    min-width: 250px;
+  }
+}
+
+.charcuterie .colonne_prix {
+  min-width: 150px;
+}
+
+@media all and (max-width: 1024px) {
+  .charcuterie__small-info {
+    font-size: 0.85em;
+  }
+}
+
+.traiteur {
+  margin: 60px 0 60px 0;
+  padding: 10px 10px;
+}
+
+.laitage {
+  padding: 10px 10px;
+}
+
+.laitage__produits {
+  margin: 40px 0 60px 0;
+}
+
+.laitage__fromages {
+  margin: 60px 0 60px 0;
+}
+
+.laitage .colonne_produit {
+  width: 300px;
+}
+
+@media all and (max-width: 1024px) {
+  .laitage .colonne_produit {
+    min-width: 200px;
+  }
+}
+
+.laitage .colonne_prix {
+  width: 100px;
+}
+
+@media all and (max-width: 1024px) {
+  .laitage .colonne_prix {
+    min-width: 80px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .laitage .colonne_quantité {
+    min-width: 120px;
+  }
+}
+
+.epicerie {
+  padding: 10px 10px;
+}
+
+.epicerie__huile {
+  margin: 40px 0 60px 0;
+}
+
+.epicerie__farine, .epicerie__legumes.sec-graines, .epicerie__condiment, .epicerie__sucre {
+  margin: 60px 0 60px 0;
+}
+
+.epicerie .colonne_produit {
+  width: 300px;
+}
+
+@media all and (max-width: 1024px) {
+  .epicerie .colonne_produit {
+    min-width: 210px;
+  }
+}
+
+.epicerie .colonne_prix {
+  width: 100px;
+}
+
+@media all and (max-width: 1024px) {
+  .epicerie .colonne_prix {
+    min-width: 8px;
+  }
+}
+
+.boissons {
+  padding: 10px 10px;
+}
+
+@media all and (max-width: 1024px) {
+  .boissons h2 {
+    font-size: 1.3em;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .boissons h3 {
+    font-size: 1.15em;
+  }
+}
+
+.boissons__bieres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 1000px;
+  margin: 40px 0 10px 0;
+}
+
+@media all and (max-width: 1024px) {
+  .boissons__bieres {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: auto;
+    gap:5px
+  }
+  .boissons__bieres__titre{
+    min-width: 140px
+  }
+  .boissons__bieres__prix{
+    min-width: 160px
+  }
+  .boissons__liste-bieres ul {
+    padding-inline-start: 10px;
+  }
+}
+
+.boissons__bieres__prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+}
+
+.boissons__bieres__quantité {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+}
+
+.boissons__bieres__titre h2 + p {
+  margin-top: 40px;
+}
+
+.boissons__liste-bieres {
+  margin-bottom: 40px;
+}
+
+.boissons__liste-bieres__nom {
+  color: #c2163c;
+  font-weight: bold;
+}
+
+.boissons__liste-bieres li {
+  width: auto;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.boissons__liste-bieres p {
+  font-size: 1em;
+}
+
+.boissons__jus-limonade {
+  margin: 60px 0 60px 0;
+}
+
+.boissons__jus-limonade .colonne_prix {
+  width: 100px;
+}
+
+.boissons__jus-limonade .colonne_produit {
+  width: 400px;
+}
+
+@media all and (max-width: 1024px) {
+  .boissons__jus-limonade .colonne_produit {
+    min-width: 200px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .boissons__jus-limonade .colonne_quantité {
+    min-width: 80px;
+  }
+}
+
+.boissons__jus-limonade__contenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media all and (max-width: 1024px) {
+  .boissons__jus-limonade__contenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.boissons__photo {
+  height: 550px;
+  height: 550px;
+  width: auto;
+  margin-top: 30px;
+  bottom: 10px;
+}
+
+@media all and (max-width: 1024px) {
+  .boissons__photo {
+    max-width: 500px;
+    min-width: 150px;
+    height: auto;
+    bottom: 10px;
+    margin: 40px auto 40px auto;
+  }
+}
+
+.tres-frais {
+  padding: 10px 10px;
+}
+
+.patisseries-glacées {
+  margin: 60px 0 60px 0;
+}
+
+.patisseries-glacées .parfum-choix {
+  font-weight: bold;
+}
+
+@media all and (max-width: 1024px) {
+  .patisseries-glacées__parfum {
+    font-size: 0.85em;
+  }
+}
+
+.patisseries-glacées__omelette__contenu__pres, .patisseries-glacées__vacherin__contenu__pres {
+  color: #c2163c;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.patisseries-glacées__délai {
+  text-decoration: underline;
+}
+
+.patisseries-glacées__omelette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 0 40px 0;
+}
+
+.patisseries-glacées__omelette__prix {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+@media all and (max-width: 1024px) {
+  .patisseries-glacées__omelette__prix {
+    min-width: 150px;
+  }
+}
+
+.patisseries-glacées__vacherin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0 40px 0;
+}
+
+.patisseries-glacées__vacherin__prix {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+@media all and (max-width: 1024px) {
+  .patisseries-glacées__vacherin__prix {
+    min-width: 150px;
+  }
+}
+
+.patisseries-glacées__vacherin__omelette__contenu, .patisseries-glacées__vacherin__vacherin__contenu {
+  max-width: 850px;
+  margin-right: 20px;
+}
+
+@media all and (max-width: 1024px) {
+  .patisseries-glacées__vacherin__omelette__contenu, .patisseries-glacées__vacherin__vacherin__contenu {
+    min-width: 350px;
+  }
+}
+
+.glaces-sorbets {
+  margin-top: 40px;
+}
+
+.glaces-sorbets li {
+  text-align: justify;
+}
+
+.glaces-sorbets .colonne_quantité {
+  width: 100px;
+}
+
+.glaces-sorbets .colonne_prix {
+  width: 200px;
+}
+
+@media all and (max-width: 1024px) {
+  .glaces-sorbets .colonne_prix {
+    min-width: 160px;
+  }
+}
+
+.glaces-sorbets .colonne_produit {
+  width: 150px;
+}
+
+.glaces-sorbets__parfum {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+@media all and (max-width: 1024px) {
+  .glaces-sorbets table {
+    font-size: 1em;
+  }
+}
+
+.escargots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 60px 0;
+  max-width: 700px;
+}
+
+@media all and (max-width: 1024px) {
+  .escargots p {
+    margin-right: 20px;
+  }
+}
+/*# sourceMappingURL=style_ferme-du-petit-marais.css.map */

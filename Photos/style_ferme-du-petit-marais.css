@@ -1,0 +1,1186 @@
+
+/* MISE EN PAGE & POLICE*/
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('font/CaviarDreams-webfont.eot');
+    src: url('font/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/CaviarDreams-webfont.woff2') format('woff2'),
+         url('font/CaviarDreams-webfont.woff') format('woff'),
+         url('font/CaviarDreams-webfont.ttf') format('truetype'),
+         url('font/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ }
+
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('font/Roboto-Regular-webfont.eot');
+    src: url('font/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('font/Roboto-Regular-webfont.woff') format('woff'),
+         url('font/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('font/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'caviar_dreamsbold';
+    src: url('font/Caviar_Dreams_Bold-webfont.eot');
+    src: url('font/Caviar_Dreams_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Caviar_Dreams_Bold-webfont.woff2') format('woff2'),
+         url('font/Caviar_Dreams_Bold-webfont.woff') format('woff'),
+         url('font/Caviar_Dreams_Bold-webfont.ttf') format('truetype'),
+         url('font/Caviar_Dreams_Bold-webfont.svg#caviar_dreamsbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'caviar_dreamsitalic';
+    src: url('font/CaviarDreams_Italic-webfont.eot');
+    src: url('font/CaviarDreams_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/CaviarDreams_Italic-webfont.woff2') format('woff2'),
+         url('font/CaviarDreams_Italic-webfont.woff') format('woff'),
+         url('font/CaviarDreams_Italic-webfont.ttf') format('truetype'),
+         url('font/CaviarDreams_Italic-webfont.svg#caviar_dreamsitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+h1
+{
+font-size: 2em;
+color: #c01b46;
+margin-top: 80px;
+margin-bottom:40px;
+}
+
+h2
+{
+	color: #3f010e;
+	font-size: 1.5em ;
+}
+
+h3
+{
+	color:#c01b46;
+	font-size: 1.2em;
+}
+
+body
+{
+	font-family:'caviar_dreamsregular', 'robotoregular';
+	color: #3f010e;
+	background-color:#FFFFFF; 
+}
+
+#bloc-page
+{
+	margin:auto;
+	padding: 0 10px 0 10px;
+}
+
+/* HEADER */
+
+
+header
+{
+	position: relative;
+}
+#logo
+{
+	position: absolute;
+	top:-5px;
+	margin-bottom: 40px;
+}
+
+.logo
+{
+	height: 100px;
+	width: auto;
+}
+
+nav a 
+{
+    font-size: 1.1em;
+	color:#3f010e;
+	text-decoration: none;
+    display: block;
+}
+
+nav ul
+{
+	padding:5px 5px 5px 5px;
+}
+
+nav li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+    text-align: left;
+    margin-right: 10px;
+}
+
+nav #sub-menu li 
+{
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+    margin:10px 0 10px 0;
+}
+
+nav a
+{
+	border-bottom: 2px solid transparent;
+}
+nav a:hover
+{
+	color: #c01b46;
+	border-bottom: 2px solid #c01b46;
+}
+nav
+/* on centre le menu dans la page */
+{
+    position: relative;
+    text-align: right;
+    margin: 20px 5px 62px 0px;
+    
+}
+
+
+
+#sub-menu 
+{
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    display: none;
+    text-align: left;
+    z-index: 1000;
+}
+
+
+nav li:hover #sub-menu
+ {
+/* Au survol des lien du menu on replace les sous menus */
+    display: block;
+    margin:0;
+    padding:0;
+    font-size: 0.8em;
+	color:#3f010e;
+	background-color: #FFFFFF; 
+	border-bottom: 2px solid transparent;
+}
+
+/* ACCUEIL */
+
+
+
+#banniere
+
+{
+	position: relative;
+	background-image: url(Photos/Ferme_du_Petit_Marais_banniere3.jpg);
+	background-size: cover;
+	margin-top:15px;
+	margin-bottom: 25px;
+	height: 700px;
+	
+}
+
+#banniere_description
+{
+	position: absolute;
+	bottom: 0;
+	height:33px;
+	width: 100%;
+	background-color: rgba(242, 243, 244, 0.5);
+	font-style:italic;
+	text-align: center;
+	padding: 7.5px 0 7.5px 0;
+	margin-bottom: 0
+}
+
+#bouton-nos-produits
+{
+	display : block;
+	text-align:center;
+	font-weight: bold;
+	font-family:'caviar_dreamsregular';
+	text-decoration: none;
+	font-size: 1.5em ;
+	color: #000000;
+	background-color: #c01b46;
+	padding: 0.75rem 1rem;
+	border: 2.5px #232222 ridge;
+	border-radius: 10rem;
+	margin: 60px auto 60px auto;
+	width: 20%;
+	cursor:pointer;
+	transform: scale(1);
+	transition: transform 400ms;
+}
+
+#bouton-nos-produits:hover
+{
+	color: #FFFFFF ;
+	background-color:#232222;
+	border: 2.5px #c01b46 ridge;
+	transform: scale(1.10);
+}
+
+
+#bouton_nos_produits_petits_écrans
+{
+	display: none;
+}
+
+#premiere_partie
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 60px;
+}
+
+.photo_verger
+{
+	height:auto;
+	width:600px;
+	border-radius:5px;
+}
+
+#premiere_partie h2
+
+{
+	max-width: 400px
+
+}
+
+#deuxieme_partie
+{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 60px;
+	align-items: center;
+}
+
+.photo_magasin
+{
+height:auto;
+width:600px;
+border-radius:5px;
+}
+
+/* QUI SOMMES NOUS ? */
+
+#contenu_presentation
+{
+	padding:0 10px 0 10px ;
+	text-align: justify;
+	margin-top:80px;
+	font-size: 1.2em;
+}
+
+#contenu_presentation h1
+
+{
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+#contenu_presentation p
+{
+	margin-top: 30px;
+}
+.signature
+{
+	text-align:right;
+	color: #c01b46;
+	font-style: italic;
+}
+
+#equipe h1
+{
+	font-size: 1.6em;
+	text-align: center;
+	text-decoration: underline;
+	margin-top:60px;
+	margin-bottom: 60px;
+}
+
+#photo_Norbert
+{
+	height: 400px;
+	width:auto;
+}
+
+#Norbert
+{
+	display: flex;
+	justify-content: space-around; 
+	align-items: center;
+}
+
+#Norbert p
+{
+	max-width: 600px;
+	text-align: justify;
+	margin-top: 20px;
+}
+
+#photo_Vince
+{
+	height: 400px;
+	width:auto;
+}
+
+#Vince
+{
+	display: flex;
+	justify-content: space-around; 
+	align-items: center;
+	margin-top: 40px;
+}
+
+#Vince p
+{
+	max-width: 600px;
+	text-align: justify;
+	margin-top: 20px;
+}
+
+#photo_Dominique
+{
+	height: 400px;
+	width:auto;
+}
+
+#Dominique
+{
+	display: flex;
+	justify-content: space-around; 
+	align-items: center;
+	margin-top: 40px;
+}
+
+#Dominique p
+{
+	max-width: 600px;
+	text-align: justify;
+	margin-top: 20px;
+}
+
+#photo_Servin
+{
+	height: 400px;
+	width:auto;
+}
+
+#Servin
+{
+	display: flex;
+	justify-content: space-around; 
+	align-items: center;
+	margin-top: 40px;
+}
+
+#Servin p
+{
+	max-width: 600px;
+	text-align: justify;
+	margin-top: 20px;
+}
+
+/* Contact */
+
+#contenu_contact
+{
+	margin-top: 120px;
+}
+
+#email
+{
+	height:30px;
+	width: auto;
+	margin-right: 15px;
+}
+
+#contenu_email
+
+{
+	display: flex;
+	align-items: center;
+	font-size: 1.15em
+}
+
+#contenu_email a
+{
+	color:#c01b46;
+	font-weight: bold;
+	text-decoration: inherit;
+}
+#contenu_telephone
+{
+	display: flex;
+	align-items: center;
+	font-size: 1.15em;
+	color:#c01b46;
+	font-weight: bold;
+}
+
+#telephone
+{
+	height:30px;
+	width: auto;
+	margin-right: 13px
+}
+
+
+#coordonnées
+{
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+
+/* FORMULAIRE */
+form 
+{
+  margin: 0 0;
+  width: 500px;
+  /* Encadré pour voir les limites du formulaire */
+  padding: 1em;
+  border: 1px solid #c01b46;
+  border-radius: 1em;
+  font-size: 1em;
+}
+
+form div + div 
+{
+  margin-top: 1em;
+}
+
+label {
+  /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+  display: inline-block;
+  width: 75px;
+  text-align: right;
+}
+
+input, textarea 
+{
+  /* Pour s'assurer que tous les champs texte ont la même police.
+     Par défaut, les textarea ont une police monospace */
+  font: 1em;
+
+  /* Pour que tous les champs texte aient la même dimension */
+  width: 400px;
+  height: 30px;
+  box-sizing: border-box;
+
+  /* Pour harmoniser le look & feel des bordures des champs texte */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus 
+{
+  /* Pour souligner légèrement les éléments actifs */
+  border-color: #000;
+}
+
+textarea 
+{
+  /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+  vertical-align: top;
+
+  /* Pour donner assez de place pour écrire du texte */
+  height: 5em;
+}
+
+.button 
+{
+  /* Pour placer le bouton à la même position que les champs texte */
+  padding-left: 150px; /* même taille que les étiquettes */
+}
+
+button 
+{
+  /* Cette marge supplémentaire représente grosso modo le même espace que celui
+     entre les étiquettes et les champs texte */
+  margin-left: .5em;
+  font-family: 'caviar_dreamsregular';
+  font-size: 1.2em;
+}
+
+#passer_commande
+
+{
+	margin-top:60px;
+	margin-bottom: 40px;
+}
+
+#passer_commande a
+
+{
+	text-decoration: underline;
+	color: #c01b46;
+	font-weight: bold;
+}	
+
+#passer_commande p
+
+{
+	display: inline-block;
+}
+
+#deadline
+{
+	font-weight: bold;
+}
+
+#contenu_contact h2
+
+{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+#contenu_venir
+{
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	margin:auto;
+}
+
+#maps
+{
+	display:flex;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+/* Nos produits */
+
+.img_boucherie,.img_legumes,.img_charcuterie,.img_epicerie,.img_boissons,.img_laitage,.img_frais
+
+{
+	height: 100px;
+	width: auto;
+	margin: auto;
+}
+
+#contenu_produits
+{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 250px 60px 200px 60px;
+}
+
+#contenu_produits a
+
+{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#charcuterie, #boucherie, #legumes,#epicerie, #boissons, #laitage, #frais
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#bouton_boucherie, #bouton_legumes, #bouton_charcuterie, #bouton_epicerie, #bouton_boissons, #bouton_laitage, #bouton_frais
+{
+	color: #FFFFFF;
+	background-color:#232222;
+	padding: 10px;
+	border: 2px #c01b46 ridge;
+	border-radius: 10px;
+	box-shadow: 1.5px 1.5px 1.5px #DBAFBA;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+a:hover #bouton_legumes, a:hover #bouton_charcuterie, a:hover #bouton_epicerie, a:hover #bouton_boissons, a:hover #bouton_laitage, a:hover #bouton_frais, a:hover #bouton_boucherie
+{
+	color: #000000 ;
+	background-color:#c01b46;
+	border: 2px #232222 ridge;
+	cursor:pointer
+}
+
+
+/* Tableau */
+th
+{
+	border-bottom: 1px solid #232222;
+	text-align: left;
+	color: #c01b46;
+}
+
+table
+{
+	font-size: 1.2em;
+	margin-top:20px;
+	border-collapse: collapse; 
+}
+
+.colonne_prix,.colonne_quantité
+{
+	padding:5px 0 5px 15px;
+}
+
+
+/* Boucherie */
+
+
+#contenu_boucherie h1
+{
+	margin-top: 100px;
+}
+
+#contenu_boucherie h2
+{
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+
+#boeuf li
+{
+	list-style:circle;
+}
+
+
+#boeuf ul
+
+{
+	margin-left: 100px;
+}
+
+#descriptif_caissette
+{
+	display: flex;
+}
+
+#contenu_caissette li
+{
+	padding: 5px 0 5px 0;
+}
+
+#contenu_boeuf, #contenu_porc, #contenu_volaille
+{
+	margin-top:60px;
+	margin-bottom: 40px;
+}
+
+#porc .colonne_produit
+{width: 400px}
+
+#agneaux .colonne_produit, #volaille .colonne_produit
+{width: 500px}
+
+
+#bouton-commande-colis
+{
+	display : block;
+	text-align:center;
+	font-weight: bold;
+	font-family:'caviar_dreamsregular';
+	text-decoration: none;
+	font-size: 1.5em ;
+	color: #000000;
+	background-color: #c01b46;
+	padding: 10px;
+	border: 2.5px #232222 ridge;
+	border-radius: 10px;
+	box-shadow: 1.5px 1.5px 1.5px #DBAFBA;
+	width: 25%;
+	margin: 60px auto 60px auto;
+	transform: scale(1);
+}
+
+a:hover#bouton-commande-colis
+{
+	color: #FFFFFF ;
+	background-color:#232222;
+	padding: 10px;
+	border: 2.5px #c01b46  ridge;
+	cursor: pointer;
+	transition: transform 400ms;
+	transform: scale(1.10)
+}
+
+#bouton-commande
+{
+	display : block;
+	text-align:center;
+	font-weight: bold;
+	font-family:'caviar_dreamsregular';
+	text-decoration: none;
+	font-size: 1.5em ;
+	color: #000000;
+	background-color: #c01b46;
+	padding: 10px;
+	border: 2.5px #232222 ridge;
+	border-radius: 10px;
+	box-shadow: 1.5px 1.5px 1.5px #DBAFBA;
+	width: 15%;
+	margin: 60px auto 60px auto;
+	transform: scale(1)
+}
+
+a:hover#bouton-commande
+{
+	color: #FFFFFF ;
+	background-color:#232222;
+	border: 2.5px #c01b46  ridge;
+	cursor:pointer;
+	transition: transform 400ms;
+	transform: scale(1.10)
+}
+
+/* Légumes */
+
+
+#contenu_legumes li
+{
+	padding:5px 0 5px 0;
+}
+
+#contenu-legumes
+{
+	padding: 0 20px 0 20px;
+}
+
+#sous_contenu_patate, #sous_contenu_tomate, #sous_contenu_carotte, #sous_contenu_betterave
+{
+	margin-right: 40px;
+	max-width:800px;
+}
+
+#contenu_carotte, #contenu_poireaux, #contenu_betterave, #contenu_butternut, #contenu_potimarron, #contenu_tomate, #contenu_oignon, #contenu_ail, #contenu_patate
+{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 20px;
+	font-size: 1em;
+}
+
+#contenu_carotte ul,#contenu_betterave ul, #contenu_poireaux ul, #contenu_butternut ul, #contenu_potimarron ul, #contenu_tomate ul, #contenu_oignon ul, #contenu_ail ul , #contenu_patate ul
+{
+	text-align:justify;
+}
+
+#contenu_legumes p+h2
+{
+	margin-top: 60px
+}
+
+#ail
+{
+	margin-bottom: 60px
+}
+
+#carotte, #poireaux, #betterave, #butternut, #potimarron, #tomate, #oignon, #ail, #patate
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px
+}
+
+#contenu_legumes ul
+{
+	padding-inline-start: 20px;
+}
+
+.astuces_cuisine
+{
+	list-style: none;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+
+#ail
+{
+	margin-bottom: 60px;
+}
+
+.photo_carotte, .photo_patate, .photo_tomate, .photo_betterave
+
+{
+	width: 450px;
+	height:auto;
+}
+
+
+#contenu_legumes .variété
+{
+	color: #c01b46;
+	font-weight: bold;
+	display: inline-block;
+}
+
+#photos_legumes
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 40px
+}
+
+.photo_aubergines,.photo_poivrons, .photo_salade, .photo_betteraves
+{
+	width: 300px;
+	height: auto;
+	margin-bottom: 40px
+}
+
+/* Charcuterie & traiteur*/
+
+#contenu_charcuterie .small_info
+{
+	font-size: 0.9em;
+	display: inline-block;	
+}
+
+#contenu_charcuterie
+{
+	margin:40px 0 60px 0;
+}
+
+#contenu_traiteur
+{
+	margin:60px 0 60px 0;
+}
+
+#contenu_charcuterie .colonne_produit
+{
+	width: 600px
+}
+
+
+/* Laitage*/
+
+#contenu_laitage_part1
+{
+	margin:40px 0 60px 0;
+}
+
+#contenu_fromage
+{
+	margin:60px 0 60px 0;
+}
+
+#contenu_laitage .colonne_produit
+{width: 350px}
+
+#contenu_laitage .colonne_prix
+{width: 100px}
+
+/* Epicerie*/
+
+#contenu_huile
+{
+	margin:40px 0 60px 0;
+}
+
+#contenu_farine, #contenu_legumes.secs_graines, #contenu_condiment, #contenu_sucré
+{
+	margin:60px 0 60px 0;
+}
+
+#contenu_epicerie .colonne_produit
+{
+	width: 300px
+}
+
+#contenu_epicerie .colonne_prix
+{
+	width: 100px
+}
+
+/* Boissons */
+
+
+#bières
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	width: 1000px
+}
+
+.type_bière
+{
+	display: inline-flex;
+	color:  #c01b46;
+	font-weight: bold;
+}
+#contenu_liste_bières li
+{
+	width: auto;
+	text-align: justify;
+}
+
+#contenu_liste_bières p
+{
+	font-size:0.9em;
+}
+
+#contenu_liste_bières 
+{
+	margin-bottom:40px;
+}
+#prix_bière
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 155px
+}
+
+#quantité_bière
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80px
+}
+#contenu_jus_limonade .colonne_produit
+{
+	width: 400px
+}
+
+#contenu_jus_limonade .colonne_prix
+{
+	width: 100px
+}
+
+#contenu_jus_limonade
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.photo_boissons
+{
+	height: 550px;
+	width:auto;
+	margin-top: 30px;
+	bottom:10px;
+}
+
+
+#bières
+{
+	margin: 40px 0 10px 0
+}
+
+
+#contenu_bières h2 + p
+{
+	margin-top: 40px
+}
+				
+
+#jus_limonade
+{
+	margin: 60px 0 60px 0
+}
+
+/* Très très frais */
+
+#sorbets, #glaces
+{
+	font-size: 1em;
+	font-weight: bold;
+	display: inline-flex;
+}
+
+#glaces_sorbets 
+{
+	margin-top: 40px
+}
+
+#glaces_sorbets li
+{
+	text-align: justify;
+}
+
+#glaces_sorbets .colonne_quantité, #glaces_sorbets .colonne_prix
+{
+	margin-left: 30px
+}
+
+.vacherin, .omelette
+{
+	color:#c01b46;
+	font-weight: bold;
+	font-size: 1.2em
+
+}
+
+#glaces_sorbets h3
+{
+	font-size: 1em
+}
+
+#patisseries_glacées
+{
+	margin:60px 0 60px 0;
+}
+#patisseries_glacées #choix
+{
+	font-weight: bold;
+}
+
+
+ #fiche_vacherin, #fiche_omelette
+{
+	max-width: 850px;
+	margin-right: 20px;
+}
+
+#délai
+{
+	text-decoration: underline;
+	display: inline-block;
+}
+
+#vacherin
+
+{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0 40px 0
+}
+
+#omelette
+{
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0px 40px 0
+}
+
+#prix_omelette, #prix_vacherin
+{
+	margin-top: 20px;
+	margin-left:20px;
+}
+
+#escargots
+{
+	display: flex;
+	justify-content: space-between;
+	margin:0 0 60px 0;
+	max-width: 700px
+}
+
+/* Footer */
+
+footer
+{
+	background-color: #232222;
+	font-size:0.8em;
+	color: #FFFFFF;
+	flex-shrink: 0;
+    border-top: 2.5px solid #c01b46;
+    margin-top:50px;
+    width: 100%;
+}
+
+.phone.gris
+{
+	height:20px;
+	width:auto;
+	margin-right: 5px
+}
+
+.map.gris
+{
+	height:20px;
+	width:auto;
+	margin-right: 2.5px
+}
+
+.email.gris
+{
+	height:20px;
+	width:auto;
+	margin-right: 7px
+}
+
+#email a
+{
+	color: #FFFFFF;
+	text-decoration: inherit;
+}
+
+#tel, #email, #adresse
+{
+	display: flex;
+	align-items: center;
+}
+.contenu-footer 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    font-size: 1em;
+    padding: 20px 0 20px;
+}
+
+.bloc.footer-horaires 
+{
+	margin-bottom: 55px
+}
+.liste-horaires
+
+{
+	margin-left:10px;
+	padding-inline-start: 20px
+}
+
+.logo_fb, .FB
+{
+	display: flex;
+	align-items: center;
+}
+
+
+.logo_fb
+{
+	height:25px;
+	width:auto;
+	margin-right: 7.5px;	
+	
+}
+
+.bloc.footer-medias
+{
+	margin-left:5px;
+}
+
+.FB 
+{
+	
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+

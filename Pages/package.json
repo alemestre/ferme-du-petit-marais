@@ -1,0 +1,14 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch style_ferme-du-petit-marais.scss:../CSS/style_ferme-du-petit-marais.css -w --style expanded",
+    "prefix": "postcss ../CSS/style_ferme-du-petit-marais.css --use autoprefixer -d ../CSS/prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
